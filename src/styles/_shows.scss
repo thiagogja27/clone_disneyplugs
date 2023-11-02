@@ -7,6 +7,11 @@
       grid-template-columns: 1fr 1fr 1fr;
       gap: 24px;
 
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr 1fr ;
+
+      }
+
       &--is-active{
         display: grid ;
        }
@@ -21,6 +26,13 @@
     &__tabs{
       display: flex;
       justify-content: center;
+
+      @media(max-width: 768px){
+        white-space: nowrap;
+        overflow: scroll;
+        padding-left: 22px;
+  
+       }
       
       &__button{
   
@@ -37,6 +49,11 @@
      
      &--is-active{
       border-color:#f9f9f9 ;
+     }
+
+     @media(max-width: 768px){
+      font-size: 16px;
+
      }
         }
     }
